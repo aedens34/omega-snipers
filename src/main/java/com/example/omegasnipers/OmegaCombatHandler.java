@@ -144,7 +144,7 @@ public class OmegaCombatHandler {
             return false;
         }
         if (!allowFriendlyFire && shooter instanceof Player shooterPlayer) {
-            PlayerTeam shooterTeam = shooterPlayer.getTeam();
+            var shooterTeam = shooterPlayer.getTeam();
             if (shooterTeam != null && shooterTeam.equals(candidate.getTeam())) {
                 return false;
             }
