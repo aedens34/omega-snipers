@@ -86,8 +86,9 @@ public final class OmegaCommands {
         }
 
         ItemStack finalTemplate = template;
+        final int givenCount = given;
         ctx.getSource().sendSuccess(() -> Component.literal(
-                "Gave " + finalTemplate.getHoverName().getString() + " to " + given + " player(s)."), true);
+                "Gave " + finalTemplate.getHoverName().getString() + " to " + givenCount + " player(s)."), true);
         return given;
     }
 }
